@@ -15,10 +15,6 @@ public class Order {
 		items.add(item);
 	}
 
-	public double calculateTotal() {
-		return items.stream().mapToDouble(Item::getPreco).sum();
-	}
-
 	public List<Item> getItems() {
 		return items;
 	}
